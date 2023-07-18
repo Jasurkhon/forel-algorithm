@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def cluster(points, radius,eps=1e-1):
+def cluster(points, radius,eps=0.1):
     centroids = []
     while len(points) != 0:
         current_point = get_random_point(points)
